@@ -7,16 +7,16 @@ import { concatMap, switchMap, mergeMap } from 'rxjs/operators';
  */
 
 /**
- * ##################### CONTEXT ##################### 
+ * ##################### CONTEXT #####################
  */
 
-/** 
+/**
  * => FibonacciService.getOperations();
  * This observable will emit an operation as a string every 500ms.
  * Example : "1 + 1 =", "2 + 1 =", "3 + 2 =", etc.
  */
 
-/** 
+/**
  * => FibonacciService.getResults(...);
  * This observable will emit a single result for a given string operation.
  * Example : FibonacciService.getResults("1 + 1 =") will output 2, FibonacciService.getResults("2 + 1 =") will output 3, etc.
@@ -24,9 +24,9 @@ import { concatMap, switchMap, mergeMap } from 'rxjs/operators';
  */
 
 /**
- * 
- * ##################### CHALLENGE ONE ##################### 
- * 
+ *
+ * ##################### CHALLENGE ONE #####################
+ *
  * Use "FibonacciService.getOperations()" to get fibonnaci operations one by one every second.
  * Then get result of operation by calling "FibonacciService.getResults(...)".
  * Store your Observable and pipe in "fibonacciObs" describe below.
@@ -36,27 +36,27 @@ import { concatMap, switchMap, mergeMap } from 'rxjs/operators';
 
 /**
  * Use this constant to store your observable and pipe
- * Example : 
+ * Example :
  *          const allFibonacciObs = of(...).pipe(...);
  *          allFibonacciObs.subscribe(...);
  */
-export const allFibonacciObs: Observable<number> = undefined;
+// export const allFibonacciObs: Observable<number> = undefined;
 /**
- * ##################### CHALLEGNGE TWO ##################### 
- * 
+ * ##################### CHALLEGNGE TWO #####################
+ *
  * Use "FibonacciService.getOperations()" to get fibonnaci operations one by one every second.
  * Then get result of operation by calling "FibonacciService.getResults(...)".
  * Store your Observable and pipe in "fastestFibonacciObs" describe below.
- * 
+ *
  * Remember in the previous exercise we want all results, but some results take 1000ms to be emitted.
  * Now we only want :
- *  - results that takes 500ms 
+ *  - results that takes 500ms
  *  - only one inner observable should be active at the time.
  *  - automatically cancel inner Observable that take more that 500ms.
- * 
+ *
  * Use this constant to store your observable and pipe
- * Example : 
+ * Example :
  *          const fastestFibonacciObs = of(...).pipe(...);
  *          fastestFibonacciObs.subscribe(...);
  */
-export const fastestFibonacciObs: Observable<number> = undefined;
+// export const fastestFibonacciObs: Observable<number> = undefined;
